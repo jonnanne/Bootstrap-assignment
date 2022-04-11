@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "WEB-projekti-TIIMI12",
+			"uri": "vsls:/"
+		}
+	],
+	"settings": {
+		"extensions.ignoreRecommendations": true,
+		"files.autoSave": "off",
+		"typescript.tsc.autoDetect": "off",
+		"debug.allowBreakpointsEverywhere": true,
+		"html.autoClosingTags": false
+	}
+}
