@@ -41,6 +41,9 @@
           </div>
         </div>
       </nav>
+
+    <!-- headline and container -->
+
     <h1 class="ms-md-2 mt-3">Tunnista hätätilanne</h1>
 
     <div class="clearfix">
@@ -54,21 +57,22 @@
           Kuvitellaanpa oheisen kuvan tilanne: tulet työpaikan kahvihuoneeseen ja löydät työkaverin lattialta eikä hän reagoi puhutteluun.  
         </p>
       
-        <p class="ms-md-2 mt-4 mb-3">
+        <p class="lead ms-md-2 mt-4 mb-3">
           Miten toimisit oheisessa tilanteessa? 
         </p>
 
+        <!-- Add buttons -->
+        <button id="wrong" type="button" class="btn btn-danger btn-lg mt-4">Otan kupin kahvia ja istun lukemaan lehden</button>
+        <button id="right" type="button" class="btn btn-success btn-lg mt-4">Alan ravistella työkaveria hereille</button>'
+        
+        <!-- Add alerts, testing (not showing on the page) -->
 
-        <button type="button" class="btn btn-danger btn-lg">Otan kupin kahvia ja istun lukemaan lehden</button>
-        <button type="button" class="btn btn-success btn-lg">Alan ravistella työkaveria hereille</button>
-
-
-
-      
-        <!--<p class="ms-md-2 mt-4">
-          Tärkeintä on että kykenee tunnistamaan tilanteen ja säilyttämään oman toimintakykynsä. On tärkeää myös kyetä tekemään nopea tilannearvio siitä, että tarvitaanko paikalle ammattiapua vai riittävätkö pienemmät ensiaputoimet tilanteen hoitamiseksi.  
-          tekemään tilanteen vaatimat ensiaputoimet joiden tavoittena on turvata henkilön peruselintoiminn
-        </p> -->
+        <div id="alert_wrong" class="alert alert-danger mt-5 mx-5" role="alert">
+          <h4 class="alert-heading">EI näin!</h4>
+          <p>Työkaverisi ei ole päiväunilla. Mikäli hän ei reagoi puhutteluun kyseessä voi olla henkeä uhkaava hätätilanne.</p>
+          <hr>
+          <p class="mb-0">Sinulla ei ole aikaa juoda kahvia eikä lukea lehteä.</p>
+        </div>
       </div>
 
 
@@ -87,6 +91,9 @@
 <!-- Add Bootstrap JS file-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<!-- Add JS file -->
+<script src="javascript.js"></script>
     
 </body>
 </html>

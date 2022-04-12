@@ -10,3 +10,7 @@ body {
 
 /*[class^="col"] {;
 } */
+
+.alert {
+    display: none;
+}
