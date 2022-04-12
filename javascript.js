@@ -1,7 +1,12 @@
 document.getElementById("wrong").onclick = function () {
-    alert("Ei näin!");
+    document.getElementById("alert_wrong").style.display = "block";
+}
+
+document.getElementById("close_wrong").onclick = function () {
+    this.parentNode.remove();
+    return false;
 }
 
 document.getElementById("right").onclick = function () {
-    alert("Oikein! Todennäköisesti työkaverisi on saanut sairauskohtauksen ja tarvitsee ammattiapua.")
+    document.getElementById("alertRight").style.display = "block";
 }
