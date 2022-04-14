@@ -1,4 +1,4 @@
-document.getElementById("alertRight").onclick ="";
+
 
 document.getElementById("wrong").onclick = function () {
     document.getElementById("alertWrong").style.display = "block";
@@ -6,8 +6,7 @@ document.getElementById("wrong").onclick = function () {
 
 
 document.getElementById("closeWrong").onclick = function () {
-    this.parentNode.remove();
-    return;
+    document.getElementById("alertWrong").remove();
 }
 
 document.getElementById("right").onclick = function () {
@@ -15,7 +14,7 @@ document.getElementById("right").onclick = function () {
 }
 
 document.getElementById("closeRight").onclick = function () {
-    this.parentNode.remove();
+    document.getElementById("alertRight").remove();
 
 }
 
