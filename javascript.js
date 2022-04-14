@@ -1,4 +1,5 @@
 
+//firstPage sivulla kyselyn nappuloiden toiminnot (alertilla oikea/väärä vastaus) sekä boxin sulkeminen
 
 document.getElementById("wrong").onclick = function () {
     document.getElementById("alertWrong").style.display = "block";
