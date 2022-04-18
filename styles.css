@@ -14,3 +14,31 @@ body {
 .alert {
     display: none;
 }
+
+
+
+.frontP {
+     position: relative;
+     max-width: 100%; /* Maximum width */
+     margin: 0 auto; /* Center it */
+      }
+      
+      .frontP .heading {
+        position: absolute; /* Position the background text */
+        top: 0; /* At the bottom. Use top:0 to append it to the top */
+        background: rgb(255, 0, 0); /* Fallback color */
+        background: rgba(255, 0, 0, 0.5); /* Black background with 0.5 opacity */
+        color: black; /* Grey text */
+        width: 100%; /* Full width */
+        padding: 30px; /* Some padding */ }
+
+        .frontP .subheading {
+            position: absolute; /* Position the background text */
+            bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+            background: rgb(245, 245, 220); /* Fallback color */
+            background: rgba(245, 245, 220, 0.5); /* Black background with 0.5 opacity */
+            color: black; /* Grey text */
+            width: 100%; /* Full width */ 
+            padding: 30px; /* Some padding */
+
+        }
