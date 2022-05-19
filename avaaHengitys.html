@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ensiavun perusteet</title>
 
+    <!--Add JS file-->
+<script src="code.js" defer></script>
+
     <!-- Add Bootstrap CSS file-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -29,48 +32,60 @@
                 <a class="nav-link active" aria-current="page" href="index.html">Uskalla auttaa -etusivu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="firstPage.html">Tunnista tilanne</a>
+                <a class="nav-link" href="tunnistaHatatilanne.html">Tunnista tilanne</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="secondPage.html">Hälyytä apua</a>
+                <a class="nav-link" href="halytaApua.html">Hälyytä apua</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="thirdPage.html">Avaa hengitystiet</a>
+                <a class="nav-link" href="avaaHengitys.html">Avaa hengitystiet</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-    <h1>Avaa hengitystiet</h1>
+    <h1 class="position-relative ms-md-2 mt-3 mx-3">Avaa hengitystiet</h1>
 
     <!--Add cards as content-->
 
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="row row-cols-1 row-cols-md-3 g-4 mx-1">
       <div class="col">
-        <div class="card h-100">
-          <img src="..." class="card-img-top" alt="...">
+        <div id="airways" class="card h-100">
+          <img src="images/open airways.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="d-grid gap-2 d-md-flex mb-3 justify-content-center">
+            <button id="no" class="btn-lg btn-danger" type="button">Hengitys ei tunnu</button>
+            <button id="yes" class="btn-lg btn-success" type="button">Hengitys tuntuu</button>
           </div>
         </div>
       </div>
 
       <div class="col">
-        <div class="card h-100">
+        <div id="unconscious" class="card h-100">
           <img src="images/first-aid-ga3d371210_1280.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
           </div>
+          <div class="d-grid gap-2 d-md-flex mb-3 justify-content-center">
+            <button id="return" class="btn-lg btn-outline-success" type="button">Palaa takaisin alkuun</button>
+          </div>
         </div>
       </div>
       <div class="col">
-        <div class="card h-100">
-          <img src="..." class="card-img-top" alt="...">
+        <div id="cpr" class="card h-100">
+          <img src="images/first-aid-g92e560017_1920.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h5 class="card-title">Ei herää, hengitys ei tunnu - eloton</h5>
+            <p class="card-text">Aloita elvytys välittömästi mikäli et tunne hengitystä. Oikea elvytysrytmi on</p>
+            <input type="number" id="chest" class="invalid"> <p>painelua</p>
+            <input type="number" id="breath" class="invalid"> <p>puhallusta</p>
+          </div>
+          <div class="d-grid gap-2 d-md-flex mb-3 justify-content-center">
+            <button id="return" class="btn-lg btn-outline-danger" type="button">Palaa takaisin alkuun</button>
           </div>
         </div>
       </div>
@@ -82,13 +97,14 @@
     <!-- Add footer -->
     <div class="container">
       <footer class="row row-cols-5 py-5 my-5">
-        <div class="col">
+        <div class="col-md-6">
           <p class="text-muted">&copy; Jonna N 2022</p>
         </div>
 
 <!-- Add Bootstrap JS file-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 
 </body>
 </html>

@@ -1,5 +1,9 @@
+/*sivuston fontti*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&display=swap');
+
 body {
     background-color: beige;
+    font-family: "Poppins";
 }
 
 
@@ -14,6 +18,11 @@ body {
 .alert {
     display: none;
 }
+
+.invalid {
+    background-color:rgb(255, 0, 0);
+}
+
 
 
 
