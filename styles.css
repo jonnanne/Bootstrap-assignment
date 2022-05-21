@@ -15,6 +15,7 @@ body {
 /*[class^="col"] {;
 } */
 
+/*Hide and show items in JS-file */
 .alert {
     display: none;
 }

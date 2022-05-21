@@ -26,7 +26,8 @@ thirdCardText.textContent = "Aloita elvytys välittömästi mikäli et tunne hen
 
 const YES_BTN = document.getElementById("yes");
 const NO_BTN = document.getElementById("no");
-const RETURN_BTN= document.getElementById("return");
+const RETURN_BTN = document.getElementById("return");
+const RETURNB_BTN = document.getElementById("returnB");
 const SECOND_CARD = document.getElementById("unconscious");
 const THIRD_CARD = document.getElementById("cpr");
 
@@ -56,13 +57,20 @@ function showOptC() {
     THIRD_CARD.classList.add("alert");
 }
 
-//Paineluiden ja puhallusten kirjoittaminen THIRD-CARD elementtiin sekä "Palaa takaisin alkuun "-napin toiminto
+//Paineluiden ja puhallusten kirjoittaminen THIRD-CARD elementtin input kenttiin sekä "Palaa takaisin alkuun "-napin toiminto
 
 let chest = document.getElementById("chest");
 let breath = document.getElementById("breath");
 
 chest.addEventListener("input", checkValidity);
 breath.addEventListener("input", checkValid);
+
+RETURNB_BTN.addEventListener("click", showOptC);
+
+function showOptC() {
+    SECOND_CARD.classList.add("alert");
+    THIRD_CARD.classList.add("alert");
+}
 
 /*
 *
@@ -77,7 +85,7 @@ function checkValidity(event) {
     if(number == 30){
         chest.classList.remove("invalid")
     }
-    else { chest.classList.add("invalid")}
+    else {chest.classList.add("invalid")}
 }
 
 function checkValid(event) {
