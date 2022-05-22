@@ -1,0 +1,43 @@
+/*sivuston fontti*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&display=swap");
+body {
+  background-color: beige;
+  font-family: "Poppins";
+}
+
+
+[class^="col"] {
+  padding: 5px;
+}
+
+
+/*Hide and show items in JS-file */
+.alert {
+  display: none;
+}
+
+.invalid {
+  background-color: rgb(255, 0, 0);
+}
+
+.p-5 h1{
+  font-size: 60px;
+  padding: 10px;
+}
+
+div > p {
+  margin-right: 5px;
+}
+
+.text-success:hover {
+  background-color: lightgreen;
+  border-radius: 10px;
+
+}
+
+
+
+
+
+
+/*# sourceMappingURL=built-styles.css.map */
