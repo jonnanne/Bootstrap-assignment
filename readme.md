@@ -2,4 +2,5 @@ Bootstrap-itsen채inen teht채v채, tavoitteena ensiapu-aiheinen teemasivu pienill�
     - 3 sivua erilaisilla layouteilla (tyyli s채ilyy samana)
     - k채ytet채채n bootstrapeista ainakin painikkeita, vetovalikkoa ja yl채palkkia
 
-Kuyvat sivustolla poimittu pixabay-kuvapankista ja ilmaiselta icons-sivustolta.
+Kuvat sivustolla poimittu pixabay- ja istock-kuvapankeista ja ilmaiselta icons-sivustolta.
+Sivutson fontti google fonts -palvelusta.
